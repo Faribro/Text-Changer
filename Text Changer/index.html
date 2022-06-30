@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div class="App">
+        <div class='text-here' id='text-container'>
+          This is some example text
+        </div>
+        <div class='change-prop'>
+          <p>
+          <input type='text' placeholder='Enter Color' id='colorbox'></input>
+
+          <button onClick='setColor()' id='colorchange'>Set Color</button>
+
+          </p>
+          <p>
+            “Everyone thinks of changing the world, but no one thinks of changing this text.”
+            <input type='range' name='text-size' min='10' max='100' default='55' oninput='sizeChange()' id="fontsize"></input>
+          </p>
+          <p>
+            <button class="stylebt" onClick='setLine()' id="underline">Underline</button>
+            <button class="stylebt" onClick='setItalic()' id="italic">Italic</button>
+            <button class="stylebt" onClick='setBold()' id="bold">Bold</button>
+          </p>
+          <p>
+
+          Select Font Family: <select onChange='setFont()' id="list">
+           
+          </select>
+
+          </p>
+
+
+        <button onClick='display()' id='getstyle'> Get Style Properties </button>
+        <p id='css-props'></p>
+
+
+      </div>
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+</html>
